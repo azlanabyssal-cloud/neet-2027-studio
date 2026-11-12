@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maheen's NEET Studio</title>
+<meta name="description" content="Maheen's step-by-step NEET 2027 study studio: unit lessons, formula sheets, real past-paper practice, focus timer, mock tests with solutions and progress tracking.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<meta name="theme-color" content="#b8307f">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#home" aria-label="Maheen's NEET Studio home"><span class="logo">M</span><span class="bt">Maheen's <b>NEET Studio</b></span></a>
+  <div class="top-right">
+    <button id="chip-timer" class="chip chip-btn" hidden aria-label="Open focus timer"></button>
+    <span id="chip-streak" class="chip" title="Study streak">🔥 0</span>
+    <span id="chip-xp" class="chip" title="Level and XP">Lv 1</span>
+    <button id="btn-theme" class="icon-btn" aria-label="Switch light or dark theme">◐</button>
+  </div>
+</header>
+<nav class="nav" id="nav" aria-label="Main">
+  <a href="#home" data-r="home"><i>🏠</i><span>Today</span></a>
+  <a href="#learn" data-r="learn"><i>🗺️</i><span>Learn</span></a>
+  <a href="#focus" data-r="focus"><i>⏲️</i><span>Focus</span></a>
+  <a href="#practice" data-r="practice"><i>✏️</i><span>Practice</span></a>
+  <a href="#mock" data-r="mock"><i>⏱️</i><span>Mocks</span></a>
+  <a href="#mistakes" data-r="mistakes"><i>📒</i><span>Mistakes</span></a>
+  <a href="#progress" data-r="progress"><i>📈</i><span>Progress</span></a>
+  <a href="#library" data-r="library"><i>📚</i><span>Library</span></a>
+  <a href="#prefs" data-r="prefs"><i>⚙️</i><span>Settings</span></a>
+</nav>
+<main id="app" tabindex="-1"><p class="loading">Loading your studio…</p></main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="data/units.js"></script>
+<script src="data/questions.js"></script>
+<script src="data/sheets.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
